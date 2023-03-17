@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monsterrat;
+    background-color: rgb(245, 236, 236);
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.image{
+    height: 75px;
+    width: 95px;
+    margin-top: 0;
+    margin-left: 50px;
+    line-height: 80px;
+}
+header{
+   
+    text-decoration: line-through;
+}
+nav{
+    background-color: rgb(245, 236, 236);
+    height: 80px;
+    width:100%;
+    float: right;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-right: 20px;
+    
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 70px;
+    padding-top:25px;
+    position: relative;
+}
+nav ul li a{
+    color:black;
+    font-size: 18px;
+    text-transform:capitalize;
+ padding-top: 8px;
+ padding-left: 21px;
+    text-decoration: none; 
+}
+nav a:hover{
+    color: orange;
+}
+#checkbtn{
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 30px;
+    display: none;
+}
+#check{
+    display: none;
+}
+#check:checked ~ ul{
+left: 0;
+}
+@media(max-width:917px){
+    #checkbtn{
+        display:block;
+    }
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        position: fixed;
+        left:-100%;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        line-height: 50px;
+        margin-top: 15px;
+    }
+}
